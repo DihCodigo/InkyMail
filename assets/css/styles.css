@@ -1,0 +1,165 @@
+/* Estilo Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f5f7;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    max-width: 1400px;
+    margin: 0 16px;
+    box-sizing: border-box;
+  }
+  
+  .sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #222;
+    border-right: 2px solid #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  /* Estilos dos Botões */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #78b3f1; /* Azul vibrante */
+    color: white;
+    border: none;
+    border-radius: 6px; /* Bordas mais arredondadas */
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Azul escuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Efeito de sombra ao passar o mouse */
+  }
+  
+  /* Ícones nos Botões */
+  button i {
+    margin-right: 8px;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Área do Sidebar */
+  .sidebar .style-section {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #444; /* Linha de separação */
+  }
+  
+  /* Estilo para entradas de texto e selects */
+  input[type="number"],
+  input[type="color"],
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Tela de Edição */
+  .editor-display {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: 100%; /* Impede que ultrapasse o limite da tela */
+    overflow-y: auto;
+  }
+  
+  /* Outras configurações de layout */
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    resize: none;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Tabela de Edição */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    cursor: pointer;
+  }
+  
+  .selecionado {
+    background-color: #faf6a5;
+  }
+  
+  /* Definições de funcionalidade */
+  .input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .input-group input {
+    width: 60px;
+  }
+  
+  /* Botões para aplicar funcionalidades */
+  .button-group button {
+    background-color: #444;
+  }
+  
+  /* Layout da Sidebar e do Painel de Exibição */
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  
+  .sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #222;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .editor-display {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    overflow-y: auto;
+  }
+  
