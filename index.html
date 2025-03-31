@@ -12,10 +12,29 @@
     <!-- Painel Lateral -->
     <aside class="sidebar">
       <div class="header" style="display: flex;">
-        <img src="./assets/img/ink (1).png" alt="InkyMail Logo" class="logo" width="80">
-        <div>
-          <h1>QIMail</h1>
-        </div>
+        <svg width="200" height="80" viewBox="0 0 260 80" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="qiGradient" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#8e44ad" />
+              <stop offset="100%" stop-color="#3498db" />
+            </linearGradient>
+            <linearGradient id="mailGradient" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#1a73e8" />
+              <stop offset="100%" stop-color="#1558b0" />
+            </linearGradient>
+          </defs>
+          
+          <g>
+            <circle cx="40" cy="40" r="35" fill="#1a73e8" />
+            <rect x="17" y="28" width="46" height="24" rx="4" ry="4" fill="none" stroke="#ffffff" stroke-width="3"/>
+            <polyline points="17,28 40,46 63,28" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          
+          <text x="90" y="55" font-family="Orbitron, sans-serif" font-size="36" font-weight="900">
+            <tspan fill="url(#qiGradient)">.Mail</tspan>
+          </text>
+        </svg>
+        
       </div>
 
       <label for="versaoSelect">Escolha a versão:</label>
@@ -60,6 +79,7 @@
 
       <button onclick="aplicarEstilosCoresAlign()"><i class="fas fa-check"></i> Aplicar Estilos</button>
 
+      <br>
       <div class="input-group">
         <label for="colspanInput"><i class="fas fa-columns"></i> <strong>Colspan:</strong></label>
         <input type="number" id="colspanInput" min="1" value="1" />
