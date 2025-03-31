@@ -1,9 +1,9 @@
-    <!-- r7_header Formato: Desktop [970x250] Mobile [320x50] Tablet [320x50] -->
-    <div id="r7_header" style="min-width: 300px; min-height: 50px">
+<!-- r7_texto_1 Formato: Desktop [728x90], [300x250] || Mobile [320x50],[300x250] Tablet [320x50] -->
+      <div id="r7_texto_1" style="min-width: 300px; min-height: 50px">
         <script>
-            var sz = [[320, 50]];
+            var sz1 = [[300, 250], [320, 50]];
             if (window.innerWidth > 980) {
-                sz = [[970, 250]];
+              sz1 = [[728, 90], [300, 250]];
             }
             googletag.cmd.push(function () {
                 window.googletag = window.googletag || { cmd: [] };
@@ -11,89 +11,95 @@
                     googletag
                         .defineSlot(
                             "/7542,40069432/parceiros/bebemamae",
-                            sz,
-                            "r7_header"
+                            sz1,
+                            "r7_texto_1"
                         )
                         .addService(googletag.pubads())
-                        .setTargeting("pos", "Billboard");
+                        .setTargeting("pos", "r7_texto_1");
                     googletag.pubads().enableSingleRequest();
                     googletag.pubads().setCentering(true);
                     googletag.enableServices();
                 });
-                googletag.display("r7_header");
+                googletag.display("r7_texto_1");
             });
-
         </script>
     </div>
 
-    <!-- r7_stickybottom: Desktop: [728x90] Mobile: [320x50] Tablet: [728x90] -->
-    <div style="
-  display: none;
-  width: auto;
-  height: auto;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
-  z-index: 9999998;
-  cursor: pointer;
-">
-        <button onclick="this.parentNode.style.display='none'" style="
-    position: absolute;
-    top: -24px;
-    right: 0;
-    height: 25px;
-    width: 25px;
-    cursor: pointer;
-    z-index: 9999999999;
-    background: #fff;
-    border: 1px solid #ccc;
-    padding: 0 0 0 1px;
-    color: #666;
-  ">
-            X
-        </button>
-        <div id="r7_stickybottom">
-            <script>
+      <!-- r7_texto_2 Formato: Desktop [728x90], [300x250] || Mobile [320x50],[300x250] Tablet [320x50] 40069432-->
+      <div id="r7_texto_2" style="min-width: 300px; min-height: 50px">
+        <script>
+            var sz2 = [[300, 250], [320, 50]];
+            if (window.innerWidth > 980) {
+              sz2 = [[728, 90], [300, 250]];
+            }
+            googletag.cmd.push(function () {
                 window.googletag = window.googletag || { cmd: [] };
                 googletag.cmd.push(function () {
                     googletag
-                        .pubads()
-                        .addEventListener("slotRenderEnded", function (event) {
-                            var div = document.getElementById(
-                                event.slot.getSlotElementId()
-                            ).parentNode;
-                            console.log(div);
-                            if (!event.isEmpty && event.slotContentChanged) {
-                                div.style.width = event.size[0] + "px";
-                                div.style.height = event.size[1] + "px";
-                                div.style.display = "block";
-                            }
-                        });
+                        .defineSlot(
+                            "/7542,40069432/parceiros/bebemamae",
+                            sz2,
+                            "r7_texto_2"
+                        )
+                        .addService(googletag.pubads())
+                        .setTargeting("pos", "r7_texto_2");
+                    googletag.pubads().enableSingleRequest();
+                    googletag.pubads().setCentering(true);
+                    googletag.enableServices();
                 });
-                var el = document.body || document.documentElement,
-                    wd = el.clientWidth || window.innerWidth;
-                if (wd < 710) {
-                    sz3 = [[320, 50]];
-                } else if (wd < 960) {
-                    sz3 = [[728, 90]];
-                } else {
-                    sz3 = [[728, 90]]
-                }
+                googletag.display("r7_texto_2");
+            });
+        </script>
+    </div>
+      <!-- r7_texto_3 Formato: Desktop [728x90], [300x250] || Mobile [320x50],[300x250] Tablet [320x50] 40069432-->
+      <div id="r7_texto_3" style="min-width: 300px; min-height: 50px">
+        <script>
+            var sz3 = [[300, 250], [320, 50]];
+            if (window.innerWidth > 980) {
+              sz3 = [[728, 90], [300, 250]];
+            }
+            googletag.cmd.push(function () {
                 window.googletag = window.googletag || { cmd: [] };
                 googletag.cmd.push(function () {
                     googletag
                         .defineSlot(
                             "/7542,40069432/parceiros/bebemamae",
                             sz3,
-                            "r7_stickybottom"
+                            "r7_texto_3"
                         )
                         .addService(googletag.pubads())
-                        .setTargeting("pos", "sticky_ad")
-                        .setTargeting("context", "rodapefixo");
+                        .setTargeting("pos", "r7_texto_3");
+                    googletag.pubads().enableSingleRequest();
+                    googletag.pubads().setCentering(true);
                     googletag.enableServices();
-                    googletag.display("r7_stickybottom");
                 });
-            </script>
-        </div>
+                googletag.display("r7_texto_3");
+            });
+        </script>
+    </div>
+      <!-- r7_texto_4 Formato: Desktop [728x90], [300x250] || Mobile [320x50],[300x250] Tablet [320x50] 40069432-->
+      <div id="r7_texto_4" style="min-width: 300px; min-height: 50px">
+        <script>
+            var sz4 = [[300, 250], [320, 50]];
+            if (window.innerWidth > 980) {
+              sz4 = [[728, 90], [300, 250]];
+            }
+            googletag.cmd.push(function () {
+                window.googletag = window.googletag || { cmd: [] };
+                googletag.cmd.push(function () {
+                    googletag
+                        .defineSlot(
+                            "/7542,40069432/parceiros/bebemamae",
+                            sz4,
+                            "r7_texto_4"
+                        )
+                        .addService(googletag.pubads())
+                        .setTargeting("pos", "r7_texto_4");
+                    googletag.pubads().enableSingleRequest();
+                    googletag.pubads().setCentering(true);
+                    googletag.enableServices();
+                });
+                googletag.display("r7_texto_4");
+            });
+        </script>
     </div>
